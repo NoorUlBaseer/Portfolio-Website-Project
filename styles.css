@@ -1,0 +1,516 @@
+/*Custom CSS*/
+body { /* Set the default font family and background color */
+    font-family: 'Arial', sans-serif;
+    background-color: #efefef;
+}
+
+.navbar { /* Customize the navbar */
+    background-color: #efefef !important;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-brand { /* Customize the navbar brand */
+    color: #000 !important;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link { /* Customize the navbar links */
+    color: #6c757d !important;
+}
+
+.navbar .nav-link:hover { /* Change link color on hover for better visibility */
+    color: #000 !important;
+}
+
+header { /*Set the padding for the header */
+    padding: 50px 0;
+}
+
+header .main-title { /* Customize the main title */
+    font-size: 7rem;
+    font-weight: lighter;
+}
+
+header .headline { /* Customize the headline */
+    font-size: 2rem;
+    margin-top: 160px; /* Adjust the margin at the top as needed */
+    padding-left: 150px; /* Adjust the padding to align the text */
+    width: 110%;
+}
+
+section { /* Set the padding for the sections */
+    padding: 50px;
+}
+
+.introduction { /* Customize the introduction text */
+    font-size: 1.6rem;
+    text-align: justify; /* Justify the text */
+    width: 75%; /* Limit the width of the introduction text */
+    margin-top: -4%;
+}
+
+.btn-primary { /* Customize the primary button */
+    background-color: #000; /* Button color */
+    border-color: #000; /* Border color of the button */
+    border-radius: 100px; /* Round the corners of the button */
+    width: 160px;
+    text-align: left; /* Align the text to the left */
+    font-weight: 700; /* Bold text */
+    position: relative; /* Position the dot */
+    padding-right: 2rem; /* Add padding to the right for the dot */
+}
+
+.btn-primary::after { /* Add a dot after the button text */
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position the dot */
+    top: 50%; /* Center the dot vertically */
+    right: 1rem; /* Position the dot to the right */
+    width: 10px;
+    height: 10px;
+    background-color: white; /* Color of the dot */
+    border-radius: 50%; /* Round the corners of the dot */
+    transform: translateY(-50%); /* Center the dot vertically */
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active { /* Change button color on hover */
+    color: #fff; /* Keeps the text color white on hover */
+    background-color: #000; /* Keeps the button color same as the original */
+    border-color: #000; /* Keeps the border color same as the original */
+}
+
+.btn-align-left { /* Align the button to the left */
+    text-align: left;
+}
+
+.social { /* Customize the social links */
+    margin-top: -35px;
+    padding-left: 200px;
+}
+
+.social h4 { /* Customize the social links heading */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.social-links { /* Customize the social links list */
+    list-style: none; /* Remove default list style */
+    padding: 0px; /* Remove default padding */
+}
+
+.custom-hr { /* Customize the horizontal line under the social links heading */
+    width: 125%;
+    border: 1px solid #000; /* Adjust the border size and color */
+    margin-left: 0; /* Align the line to the left */
+}
+
+.social-links li { /* Customize the social links */
+    margin-bottom: 10px; /* Add space between social links */
+    font-size: 20px;
+    font-weight: 600; /* Bold text */
+}
+
+.social-links a { /* Customize the social links */
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Link color */
+}
+
+.social-links a:hover { /* Underline the social links on hover */
+    text-decoration: underline;
+}
+
+.services-section h2 { /* Customize the services section heading */
+    font-size: 2rem; /* Font size */
+    font-weight: 800;
+    text-align: left;
+    margin-top: 50px; /* Add space at the top */
+    margin-bottom: 50px; /* Add space between the heading and services */
+}
+
+.services-row { /* Customize the services row */
+    display: flex; /* Display services in a row */
+    justify-content: space-between; /* Add space between services */
+    align-items: flex-start; /* Align services to the top */
+    width: 105%;
+    margin-left: -15px;
+}
+
+.service-box { /* Customize the service box */
+    text-align: left;
+    padding: 20px;
+    border-left: 2px solid #ccc; /* Add a border to the left of the service box */
+}
+
+.service-number { /* Customize the service number */
+    font-size: 3rem;
+    color: #999;
+}
+
+.service-box h4 { /* Customize the service title */
+    font-size: 1.5rem;
+    margin-top: 20px; /* Add space between the service number and title */
+    font-weight: bold;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.service-box p { /* Customize the service description */
+    margin-top: 10px; /* Add space between the service title and description */
+    font-size: 1.3rem;
+    line-height: 1.5; /* Adjust the line height */
+}
+
+.selected-work-section { /* Customize the selected work section */
+    padding: 50px 0;
+    position: relative; /* Position the background image */
+    z-index: 1; /* Bring the content to the front */
+    background-image: url('image.png'); /* Add background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: auto; /* Adjust the background size */
+    background-position: center; /* Center the background image */
+}
+
+.selected-work-section::before { /* Add a semi-transparent overlay to the background image */
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position the overlay */
+    top: 0; /* Position the overlay at the top */
+    left: 0; /* Position the overlay at the left */
+    width: 100%; /* Cover the entire section */
+    height: 100%; /* Cover the entire section */
+    z-index: -1; /* Send the overlay to the back */
+}
+
+.selected-work-section h2 { /* Customize the selected work section heading */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.selected-work-section h2 sup { /* Customize the superscript in the heading */
+    font-size: 1rem;
+    vertical-align: bottom; /* Align the superscript to the bottom */
+}
+
+.selected-work-section p { /* Customize the selected work section description */
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 10px; /* Add space between the heading and description */
+}
+
+.work-item { /* Customize the work item */
+    position: relative;
+    padding: 20px 0;
+    border-top: 2px solid #ccc; /* Add a border to the top of the work item */
+    text-align: left; /* Align the text to the left */
+}
+
+.work-item:last-child { /* Add a border to the bottom of the last work item */
+    border-bottom: 2px solid #ccc;
+}
+
+.work-item h3 { /* Customize the work item title */
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin-bottom: 5px; /* Add space between the title and description */
+    width: 80%;
+}
+
+.work-item p { /* Customize the work item description */
+    font-size: 1.3rem;
+    color: #777;
+}
+
+.work-number { /* Customize the work number */
+    position: absolute;
+    top: 50%; /* Position the work number at the center */
+    right: 0; /* Position the work number to the right */
+    transform: translateY(-50%); /* Center the work number vertically */
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.my-way-section { /* Customize the my way section */
+    padding: 50px 0;
+}
+
+.my-way-section h2 { /* Customize the my way section heading */
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px; /* Add space between the heading and description */
+    width: 80%;
+}
+
+.my-way-section .description { /* Customize the my way section description */
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5; /* Adjust the line height */
+    width: 100%;
+    text-align: left; /* Align the text to the left */
+}
+
+.service-item { /* Customize the service item */
+    margin-bottom: 20px; /* Add space between service items */
+    border-bottom: 2px solid #ccc; /* Add a border to the bottom of the service item */
+    padding-bottom: 20px;
+    padding: 10px; /* Add padding to the service item */
+    max-width: 90%; /* Limit the width of the service item */
+    margin-left: 50px; /* Adjust the margin to align the service items */
+}
+
+.service-header { /* Customize the service header */
+    display: flex; /* Display the service header as a flexbox */
+    justify-content: space-between; /* Add space between elements */
+    align-items: center; /* Align items to the center */
+}
+
+.service-number { /* Customize the service number */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-right: 40px; /* Add space between the service number and title */
+}
+
+.service-title { /* Customize the service title */
+    font-size: 1.8rem;
+    font-weight: 700;
+    flex-grow: 1; /* Allow the title to grow */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add an ellipsis to the end of the text */
+}
+
+.service-toggle { /* Customize the service toggle button */
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.service-description { /* Customize the service description */
+    font-size: 1.3rem;
+    margin-top: 10px; /* Add space between the service title and description */
+    display: none; /* Hide the service description by default */
+}
+
+footer { /* Customize the footer */
+    display: flex; /* Display the footer as a flexbox */
+    flex-direction: column; /* Align items in a column */
+    align-items: flex-start; /* Align items to the left */
+    height: 500px; /* Set the height of the footer */
+}
+
+.footer-content { /* Customize the footer content */
+    display: flex; /* Display the footer content as a flexbox */
+    justify-content: space-between; /* Add space between elements */
+    align-items: center;
+    width: 100%;
+}
+
+footer h2 { /* Customize the footer heading */
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: left; /* Align the text to the left */
+    max-width: 70%; /* Limit the width of the heading */
+}
+
+footer .btn-primary { /* Customize the primary button in the footer */
+    font-weight: 700;
+    margin-left: auto; /* Align the button to the right */
+    margin-top: 25%; /* Add space between the button and the heading */
+}
+
+.footer-content-bottom { /* Customize the bottom section of the footer */
+    display: flex; /* Display the bottom section as a flexbox */
+    justify-content: space-between; /* Add space between elements */
+    align-items: center;
+    width: 100%;
+}
+
+footer p { /* Customize the footer paragraph */
+    font-size: 1.2rem;
+    margin: 20px 0; /* Add space around the paragraph */
+}
+
+footer .social-links { /* Customize the social links in the footer */
+    display: flex; /* Display the social links as a flexbox */
+    gap: 35px; /* Add space between social links */
+    font-size: 1.2rem;
+}
+
+footer .social-links a { /* Customize the social links in the footer */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer .social-links a:hover { /* Underline the social links on hover */
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1.2rem;
+    }
+
+    header .main-title {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    header .headline {
+        font-size: 2rem;
+        text-align: left;
+        font-weight: 500;
+        margin-top: 20px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .introduction {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: left;
+        width: 100%;
+        margin-top: -20%;
+    }
+
+    .btn-primary {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+        padding-right: 1rem;
+    }
+
+    .social {
+        margin-top: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .social h4 {
+        font-size: 1.2rem;
+    }
+
+    .services-row {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .service-box {
+        border: none;
+        margin-bottom: 30px;
+    }
+
+    .service-number {
+        font-size: 2rem;
+    }
+
+    .service-box h4 {
+        font-size: 1.2rem;
+    }
+
+    .service-box p {
+        font-size: 1rem;
+    }
+
+    .selected-work-section {
+        padding: 20px 0;
+    }
+
+    .selected-work-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .selected-work-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .work-item {
+        padding: 10px 0;
+    }
+
+    .work-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .work-item p {
+        font-size: 1rem;
+    }
+
+    .work-number {
+        font-size: 1rem;
+    }
+
+    .my-way-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .my-way-section .description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .service-item {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .service-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-number {
+        font-size: 1.2rem;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+    }
+
+    .service-toggle {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer .btn-primary {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer-content-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .social-links {
+        font-size: 1rem;
+        gap: 20px;
+    }
+}
